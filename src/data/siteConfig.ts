@@ -1,0 +1,38 @@
+export const siteConfig = {
+  brandName: 'Gaps Magic',
+  brandFullName: 'Gaps Magic Wellness',
+  legalName: 'Gaps Magic Wellness Private Limited',
+  tagline: 'Growth Allowed People Strong',
+  email: 'kakubhatiagapsmaicshop@gmail.com',
+  phone: '8219531115',
+  phone2: '9350897874',
+  whatsapp: '918219531115',
+  address: '1831, Bhatia Complex, Basant Vihar Colony, Kalka, opposite Bhatia Daily Needs, District Panchkula, Haryana 133302',
+  footerCredit: 'Grow with Raj',
+  offerPeriodStart: '20 October 2026',
+  offerPeriodEnd: '20 April 2027',
+  offers: [
+    {
+      label: 'MRP ₹199–₹999',
+      rule: 'Buy 2 Get 1 Free + 20% Discount',
+      minMRP: 199,
+      maxMRP: 999,
+      type: 'B2G1' as const,
+      discountPercent: 20,
+    },
+    {
+      label: 'MRP ₹1,199–₹4,480',
+      rule: 'Buy 1 Get 1 Free + 20% Discount',
+      minMRP: 1199,
+      maxMRP: 4480,
+      type: 'B1G1' as const,
+      discountPercent: 20,
+    },
+  ],
+  freeItemGstNote: 'GST on free products is applicable as per the client\'s instructions. Final tax calculation pending accountant verification.',
+  paymentMethods: [
+    { id: 'cod', name: 'Cash on Delivery', description: 'Pay when you receive your order' },
+    { id: 'razorpay', name: 'Online Payment (Razorpay)', description: 'Secure online payment — integration pending' },
+  ],
+  socialLinks: [] as { platform: string; url: string }[],
+};

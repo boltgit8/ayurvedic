@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream-50 text-forest-900 font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+  *:focus-visible {
+    @apply outline-none ring-2 ring-forest-500 ring-offset-2 ring-offset-cream-50 rounded-sm;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .container-narrow {
+    @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-forest-700 px-6 py-3 text-sm font-medium text-cream-50 transition-all hover:bg-forest-800 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-forest-200 bg-white px-6 py-3 text-sm font-medium text-forest-700 transition-all hover:border-forest-300 hover:bg-forest-50;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-gold-500 px-6 py-3 text-sm font-medium text-forest-950 transition-all hover:bg-gold-400 hover:shadow-lg;
+  }
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-gold-400 bg-transparent px-6 py-3 text-sm font-medium text-gold-700 transition-all hover:bg-gold-50;
+  }
+  .input-field {
+    @apply w-full rounded-md border border-cream-300 bg-white px-4 py-2.5 text-sm text-forest-900 placeholder-cream-400 transition-all focus:border-forest-400 focus:ring-2 focus:ring-forest-200;
+  }
+  .badge {
+    @apply inline-flex items-center rounded px-2 py-0.5 text-xs font-medium;
+  }
+  .section-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold-600;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
