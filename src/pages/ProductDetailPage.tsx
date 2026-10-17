@@ -10,7 +10,6 @@ import {
   Plus,
   ChevronRight,
   Info,
-  Leaf,
 } from 'lucide-react';
 import { getProductBySlug, getProductsByCategory } from '@/data/products';
 import { getProductImage } from '@/data/images';
@@ -22,7 +21,6 @@ import { useCart } from '@/context/CartContext';
 import { useWishlist } from '@/context/WishlistContext';
 import { useToast } from '@/context/ToastContext';
 import { formatPrice, getOfferBadgeForProduct, isProductOfferEligible, getOfferTierForMRP } from '@/utils/offerEngine';
-import { siteConfig } from '@/data/siteConfig';
 
 export function ProductDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -89,12 +87,11 @@ export function ProductDetailPage() {
           <div className="overflow-hidden rounded-2xl border border-cream-200 bg-white">
             <ProductImage src={image} alt={product.name} aspectRatio="square" loading="eager" />
           </div>
-          <div className="absolute left-4 top-4 flex flex-col gap-2">
-            {badge && (
-              <span className="badge bg-forest-600 text-cream-50 shadow-sm">{badge}</span>
-            )}
-            {discountPercent > 0 && (
-              <span className="badge bg-accent-500 text-white shadow-sm">{discountPercent}% Off</span>
+          <div className="absolute left-4 top-4">
+            {(badge || (discountPercent > 0)) && (
+              <span className="rounded-full bg-forest-700/95 px-3 py-1 text-[11px] font-medium text-cream-50 backdrop-blur-sm shadow-sm">
+                {badge ?? `${discountPercent}% Off`}
+              </span>
             )}
           </div>
         </div>

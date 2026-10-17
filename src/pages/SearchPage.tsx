@@ -1,5 +1,5 @@
 import { useSearchParams, Link } from 'react-router-dom';
-import { Search as SearchIcon, Leaf } from 'lucide-react';
+import { Search as SearchIcon } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { searchProducts } from '@/data/products';
 import { Breadcrumb } from '@/components/Breadcrumb';

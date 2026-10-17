@@ -10,12 +10,12 @@ export function Logo({ className = '', variant = 'dark' }: { className?: string;
   const dividerColor = variant === 'dark' ? 'bg-gold-400' : 'bg-gold-400';
 
   return (
-    <div className={`flex items-center gap-2.5 ${className}`}>
-      <span className={`font-serif text-2xl font-bold tracking-tight ${primary}`}>
+    <div className={`flex items-center gap-2 sm:gap-2.5 ${className}`}>
+      <span className={`font-serif text-xl sm:text-2xl font-bold tracking-tight ${primary}`}>
         Gaps Magic
       </span>
-      <span className={`h-6 w-px ${dividerColor} opacity-60`} />
-      <span className={`flex flex-col leading-none`}>
+      <span className={`h-5 sm:h-6 w-px ${dividerColor} opacity-60`} />
+      <span className={`flex flex-col leading-none hidden sm:flex`}>
         <span className={`font-sans text-[10px] font-semibold uppercase tracking-[0.15em] ${accent}`}>
           Wellness
         </span>

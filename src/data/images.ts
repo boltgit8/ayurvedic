@@ -38,8 +38,8 @@ export const productImages: Record<string, string> = {
   'gold-package': 'https://images.pexels.com/photos/34144841/pexels-photo-34144841.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'silver-package': 'https://images.pexels.com/photos/13518587/pexels-photo-13518587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 
-  // Electronics — using circuit/wiring imagery, not a navigation dashboard
-  'gaps-magic-gps-tracker': 'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  // Electronics — GPS navigation context imagery, not actual product hardware photo
+  'gaps-magic-gps-tracker': 'https://images.pexels.com/photos/1412214/pexels-photo-1412214.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 };
 
 export const categoryImages: Record<string, string> = {
@@ -48,7 +48,7 @@ export const categoryImages: Record<string, string> = {
   suits: 'https://images.pexels.com/photos/25184955/pexels-photo-25184955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   appliances: 'https://images.pexels.com/photos/7166645/pexels-photo-7166645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   combos: 'https://images.pexels.com/photos/19437857/pexels-photo-19437857.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  electronics: 'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  electronics: 'https://images.pexels.com/photos/1412214/pexels-photo-1412214.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   skincare: 'https://images.pexels.com/photos/27544691/pexels-photo-27544691.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   homecare: 'https://images.pexels.com/photos/10268087/pexels-photo-10268087.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   footwear: 'https://images.pexels.com/photos/267177/pexels-photo-267177.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',

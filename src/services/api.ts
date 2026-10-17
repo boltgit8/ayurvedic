@@ -92,7 +92,7 @@ export const api = {
     };
   },
 
-  async trackOrder(orderId: string, email: string): Promise<ApiResponse<null>> {
+  async trackOrder(_orderId: string, _email: string): Promise<ApiResponse<null>> {
     await delay(500);
     return {
       success: false,
@@ -101,7 +101,7 @@ export const api = {
     };
   },
 
-  async placeOrder(orderData: unknown): Promise<ApiResponse<null>> {
+  async placeOrder(_orderData: unknown): Promise<ApiResponse<null>> {
     await delay(500);
     return {
       success: false,
@@ -110,7 +110,7 @@ export const api = {
     };
   },
 
-  async login(email: string, _password: string): Promise<ApiResponse<null>> {
+  async login(_email: string, _password: string): Promise<ApiResponse<null>> {
     await delay(500);
     return {
       success: false,
@@ -119,7 +119,7 @@ export const api = {
     };
   },
 
-  async register(name: string, email: string, _password: string): Promise<ApiResponse<null>> {
+  async register(_name: string, _email: string, _password: string): Promise<ApiResponse<null>> {
     await delay(500);
     return {
       success: false,

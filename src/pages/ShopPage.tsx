@@ -1,10 +1,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { SlidersHorizontal, Grid, List } from 'lucide-react';
+import { SlidersHorizontal } from 'lucide-react';
 import { ProductCard } from '@/components/ProductCard';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { products } from '@/data/products';
-import { getEnabledCategories, getCategoryBySlug } from '@/data/categories';
+import { getEnabledCategories } from '@/data/categories';
 import type { Product } from '@/types';
 
 type SortOption = 'name' | 'price-low' | 'price-high' | 'mrp';

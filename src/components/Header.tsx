@@ -102,7 +102,7 @@ export function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search products, categories..."
-                  className="w-full rounded-md border border-cream-200 bg-cream-50 py-2.5 pl-10 pr-4 text-sm text-forest-800 placeholder-cream-400 transition-all focus:border-forest-300 focus:bg-white focus:ring-1 focus:ring-forest-200"
+                  className="w-full rounded-md border border-cream-300 bg-white py-2.5 pl-10 pr-4 text-sm text-forest-800 placeholder-cream-500 transition-all focus:border-forest-400 focus:ring-2 focus:ring-forest-200"
                 />
                 <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-forest-400" />
               </div>
@@ -161,7 +161,7 @@ export function Header() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search products..."
-                className="w-full rounded-md border border-cream-200 bg-cream-50 py-2.5 pl-10 pr-4 text-sm text-forest-800 placeholder-cream-400 transition-all focus:border-forest-300 focus:bg-white focus:ring-1 focus:ring-forest-200"
+                className="w-full rounded-md border border-cream-300 bg-white py-2.5 pl-10 pr-4 text-sm text-forest-800 placeholder-cream-500 transition-all focus:border-forest-400 focus:ring-2 focus:ring-forest-200"
               />
               <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-forest-400" />
             </div>

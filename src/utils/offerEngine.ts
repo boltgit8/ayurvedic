@@ -97,7 +97,7 @@ export function calculateCartSummary(cartItems: CartItem[]): CartSummary {
   const freeItemsInCart = cartItems.filter((item) => item.isFreeItem);
 
   let subtotal = 0;
-  let totalDiscount = 0;
+  const totalDiscount = 0;
   const freeItemsList: { product: Product; quantity: number }[] = [];
 
   for (const item of paidItems) {

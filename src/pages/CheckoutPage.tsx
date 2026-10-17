@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   ArrowRight,
-  Check,
   Info,
   Truck,
   CreditCard,
@@ -32,8 +31,7 @@ interface FormErrors {
 }
 
 export function CheckoutPage() {
-  const navigate = useNavigate();
-  const { summary, clearCart } = useCart();
+  const { summary } = useCart();
   const [formData, setFormData] = useState<FormData>({
     fullName: '',
     email: '',

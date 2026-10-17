@@ -8,6 +8,7 @@
   }
   body {
     @apply bg-cream-50 text-forest-900 font-sans antialiased;
+    overflow-x: hidden;
   }
   h1, h2, h3, h4, h5 {
     @apply font-serif;
@@ -37,7 +38,7 @@
     @apply inline-flex items-center justify-center gap-2 rounded-md border border-gold-400 bg-transparent px-6 py-3 text-sm font-medium text-gold-700 transition-all hover:bg-gold-50;
   }
   .input-field {
-    @apply w-full rounded-md border border-cream-300 bg-white px-4 py-2.5 text-sm text-forest-900 placeholder-cream-400 transition-all focus:border-forest-400 focus:ring-2 focus:ring-forest-200;
+    @apply w-full rounded-md border border-cream-300 bg-white px-4 py-2.5 text-sm text-forest-900 placeholder-cream-500 transition-all focus:border-forest-400 focus:ring-2 focus:ring-forest-200;
   }
   .badge {
     @apply inline-flex items-center rounded px-2 py-0.5 text-xs font-medium;
